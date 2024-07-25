@@ -1,161 +1,507 @@
 :root {
   --font-principal: Montserrat, sans-serif;
   --font-logo: Paytone One, sans-serif;
-  --azul-claro: #209CBD;
+  --azul-claro: #26ADBF;
   --azul-medio: #1F8FAD;
-  --azul-escuro: #2D7BAA;
+  --azul-escuro: #18809C;
   --branco-azulado: #F8FCFF;
+  --preto-azulado: #192329;
 }
 
-body{
-  display: flex;
-  justify-content: center;
+body {
   background-color: var(--branco-azulado);
   font-family: var(--font-principal);
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
-.header img{
-  height: 50px;
-  margin-top: 50px;
+
+button {
+  font-family: var(--font-principal);
+  cursor: pointer;
+  font-size: 20px;
+  border-radius: 5px;
+  border: none;
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--branco-azulado);
+  box-shadow: 0 20px 10px -20px rgba(0, 0, 0, .2);
+  background-color: var(--azul-claro);
+  padding: 20px 30px;
 }
-main{
+
+button:hover {
+  background-color: var(--azul-medio);
+}
+
+header {
   display: flex;
   align-items: center;
-  gap: 160px;
+  justify-content: center;
+  gap: 190px;
+  margin-top: 50px;
+}
+
+.header img {
+  height: 50px;
+}
+
+.header a {
+  text-decoration: none;
+  color: #1f8fad;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.mainContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
   margin-top: 65px;
 }
-.div1 h2{
-  color: #1F8FAD;
-  font-size: 34px;
-  font-weight: 600;
-  width: 550px;
-}
-.div1 button{
-  font-family: var(--font-principal);
-  font-size: 18px;
-  padding: 1.2em 4rem;
-  cursor: pointer;
-  font-weight: 600;
-  border-radius: 30px;
-  text-shadow: 2px 2px 3px rgba(7, 153, 211, 0.5);
-  background-image: linear-gradient(to right, #26ADBF, #2D7BAA, #26ADBF);
-  background-size: 200%;
-  color: var(--branco-azulado);
-  border: none;
 
-  box-shadow: 0 30px 10px -20px rgba(0,0,0,.2);
+.div1 h2 {
+  color: var(--azul-escuro);
+  font-size: 34px;
+  font-weight: 500;
+  width: 570px;
+}
+
+.div1 button {
   transition: background .3s ease;
 }
-button:hover {
-  background-size: 320%;
-  background-position: right center;
-}
-.div2 img{
+
+.div2 img {
   height: 350px;
 }
-@media only screen and (max-width: 1116px){
-  main{
-    gap: 40px;
+
+.cardBackground {
+  position: relative;
+  left: 50%;
+  margin-left: -50vw;
+  width: 100vw;
+  padding: 50px 0;
+  background-color: var(--azul-medio);
+  margin-top: 50px;
+}
+
+.cardContent {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.cardContent h2 {
+  color: var(--branco-azulado);
+  font-size: 30px;
+  margin: 0;
+}
+
+.venderParagrafo {
+  color: var(--branco-azulado);
+  font-size: 22px;
+}
+
+.cardContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.card {
+  margin-top: 25px;
+  background-color: var(--branco-azulado);
+  padding: 40px 20px 40px 25px;
+  border-radius: 10px;
+}
+
+.cardParagrafo {
+  width: 450px;
+}
+
+.card h3,
+p {
+  color: var(--preto-azulado);
+}
+
+.sobreContainer {
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+}
+
+.sobreTexto {
+  color: var(--preto-azulado);
+}
+
+.sobreTexto h2 {
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.sobreTexto p {
+  width: 486px;
+  font-size: 22px;
+}
+
+.sobreContainer img {
+  width: 500px;
+  border-radius: 5px;
+  box-shadow: 10px 10px 0px 0px #26ADBF;
+}
+
+.sobreTexto button {
+  padding: 18px 25px;
+  font-size: 19px;
+  transition: background .3s ease;
+}
+
+.footerBackground {
+  position: relative;
+  left: 50%;
+  margin-left: -50vw;
+  width: 100vw;
+  padding: 50px 0;
+  background-color: var(--azul-escuro);
+  margin-top: 50px;
+}
+
+.footerContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.footerLogo img {
+  height: 45px;
+}
+
+.footerLogo p {
+  color: var(--branco-azulado);
+  font-size: 22px;
+  margin: 0;
+  margin-top: 10px;
+}
+
+.footerPolitica a {
+  display: flex;
+  margin-bottom: 20px;
+  font-size: 19px;
+  text-decoration: none;
+  color: var(--branco-azulado);
+}
+
+@media only screen and (max-width: 1116px) {
+  header {
+    gap: 155px;
   }
-  .div1 h2{
-    font-size: 30px;
-  }
-  .div1 button{
-    font-size: 18px;
-    padding: 1em 3rem;
-  }
-  .div2 img{
-    height: 300px;
-  }
-  .header img{
+
+  .header img {
     height: 45px;
   }
-}
-@media only screen and (max-width: 930px){
-  main{
-    gap: 40px;
-  }
-  .div1 h2{
-    font-size: 26px;
-    width: 426px;
-  }
-  .div1 button{
-    font-size: 16px;
-    padding: 1em 3rem;
-  }
-  .div2 img{
-    height: 250px;
-  }
-  .header img{
-    height: 40px;
-  }
-}
-@media only screen and (max-width: 752px){
-  main{
-    gap: 40px;
-  }
-  .div1 h2{
-    font-size: 24px;
-    width: 388px;
-  }
-  .div1 button{
-    font-size: 16px;
-    padding: 1em 3rem;
-  }
-  .div2 img{
-    height: 250px;
-  }
-  .header img{
-    height: 40px;
-  }
-}
-@media only screen and (max-width: 694px){
-  main{
-    gap: 40px;
-  }
-  .div1 h2{
-    font-size: 22px;
-    width: 270px;
-  }
-  .div1 button{
-    font-size: 16px;
-    padding: 1em 3rem;
-  }
-  .div2 img{
-    height: 200px;
-  }
-  .header img{
-    height: 40px;
-  }
-}
 
-@media screen and (max-width: 554px){
-  main{
-    flex-direction: column;
-    gap: 40px;
+  .div1 h2 {
+    font-size: 30px;
+    width: 510px;
   }
-  .div1 h2{
-    text-align: center;
+
+  .div2 img {
+    height: 305px;
+  }
+
+  button {
+    font-size: 18px;
+    padding: 16px 30px;
+  }
+
+  .sobreTexto button {
+    padding: 16px 25px;
+    font-size: 18px;
+  }
+
+  .cardContent h2 {
+    font-size: 28px;
+  }
+
+  .card {
+    padding: 28px 18px;
+  }
+
+  .cardParagrafo {
+    width: 375px;
+  }
+
+  .venderParagrafo {
     font-size: 20px;
-    width: 378px;
+  }
 
+  .sobreTexto h2 {
+    font-size: 28px;
   }
-  .div1 button{
-    font-size: 15px;
-    padding: 0.8em 2rem;
-    display: block;
-    margin: 0 auto;
-    margin-top: 30px;
+
+  .sobreTexto p {
+    font-size: 20px;
+    width: 430px;
   }
-  a{
-    text-decoration: none;
+
+  .sobreContainer img {
+    width: 418px;
   }
-  .div2 img{
-    height: 240px;
-  }
-  .header img{
-    display: block;
-    margin: 0 auto;
-    margin-top: 49px;
+
+  .footerLogo img {
     height: 40px;
+  }
+
+  .footerLogo p {
+    font-size: 19px;
+  }
+
+}
+
+@media only screen and (max-width: 968px) {
+  header {
+    gap: 116px;
+  }
+
+  .header img {
+    height: 40px;
+  }
+
+  .mainContainer {
+    gap: 13px;
+  }
+
+  .div1 h2 {
+    font-size: 28px;
+    width: 481px;
+  }
+
+  .div2 img {
+    height: 286px;
+  }
+
+  .venderParagrafo {
+    font-size: 19px;
+  }
+
+  .card {
+    padding: 18px;
+  }
+
+  .cardBackground {
+    padding: 30px 10px;
+  }
+
+  .cardParagrafo {
+    width: 350px;
+  }
+
+  .sobreTexto p {
+    font-size: 19px;
+    width: 360px;
+  }
+
+  .sobreContainer img {
+    width: 390px;
+  }
+
+  button {
+    font-size: 17px;
+  }
+
+  .sobreTexto button {
+    font-size: 17px;
+  }
+
+  .footerBackground {
+    padding: 50px 10px;
+  }
+
+  .footerLogo img {
+    height: 38px;
+  }
+}
+
+@media only screen and (max-width: 834px) {
+  header {
+    gap: 85px;
+  }
+
+  .div1 h2 {
+    font-size: 26px;
+    width: 429px;
+  }
+
+  .div2 img {
+    height: 270px;
+  }
+
+  .mainContainer {
+    gap: 38px;
+  }
+
+  .cardContent h2 {
+    font-size: 26px;
+  }
+
+  .venderParagrafo {
+    font-size: 18px;
+  }
+
+  .cardParagrafo {
+    font-size: 15px;
+    width: 315px;
+  }
+
+  .card h3 {
+    font-size: 16px;
+  }
+
+  .card {
+    padding: 12px;
+  }
+
+  .sobreTexto h2 {
+    font-size: 26px;
+  }
+
+  .sobreTexto p {
+    font-size: 18px;
+    width: 340px;
+  }
+
+  .sobreContainer img {
+    width: 343px;
+  }
+
+  .sobreContainer {
+    gap: 36px;
+  }
+
+  .footerLogo img {
+    height: 36px;
+  }
+
+  .footerContainer {
+    gap: 165px;
+  }
+}
+
+@media only screen and (max-width: 814px) {
+  .header img {
+    height: 36px;
+  }
+
+  .mainContainer {
+    gap: 11px;
+  }
+
+  .div2 img {
+    height: 260px;
+  }
+}
+
+@media only screen and (max-width: 771px) {
+  header {
+    gap: 70px;
+  }
+
+  .mainContainer {
+    gap: 10px;
+  }
+
+  .div1 h2 {
+    font-size: 25px;
+    width: 422px;
+  }
+
+  .div2 img {
+    height: 220px;
+  }
+
+  .button {
+    padding: 15px 28px;
+    font-size: 16px;
+  }
+
+  .cardContent h2 {
+    font-size: 25px;
+  }
+
+  .venderParagrafo {
+    font-size: 17px;
+  }
+
+  .sobreTexto h2 {
+    font-size: 25px;
+  }
+
+  .sobreTexto p {
+    width: 328px;
+  }
+
+  .sobreContainer {
+    gap: 15px;
+  }
+}
+
+@media only screen and (max-width: 705px) {
+  header {
+    gap: 45px;
+  }
+
+  .div1 h2 {
+    width: 366px;
+  }
+
+  .sobreTexto button {
+    font-size: 16px;
+    padding: 14px 23px;
+  }
+
+  .sobreContainer {
+    gap: 11px;
+  }
+
+  .sobreContainer img {
+    width: 287px;
+  }
+
+  .card {
+    padding: 5px;
+  }
+
+  .cardParagrafo {
+    width: 287px;
+  }
+
+  .sobreTexto p {
+    width: 284px;
+  }
+
+  .footerContainer {
+    gap: 115px;
+  }
+}
+
+@media screen and (max-width: 659px) {
+  header{
+    gap: 20px;
+  }
+  .div1 h2 {
+    width: 330px;
+  }
+}
+
+@media screen and (max-width: 573px) {
+  header{
+    display: none;
+  }
+  .mainContainer{
+    flex-direction: column-reverse;
+    text-align: center;
   }
 }

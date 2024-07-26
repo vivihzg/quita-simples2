@@ -13,8 +13,8 @@ const Footer = () => (
                     <p>Simplificando o pagamento <br /> dos seus precatórios.</p>
                 </div>
                 <div className={styles.footerPolitica}>
-                    <a href="#">Política de Privacidade</a>
-                    <a href="#">Política de Cookies</a>
+                    <p><a href="#">Política de Privacidade</a></p>
+                    <p><a href="#">Política de Cookies</a></p>
                 </div>
             </div>
         </div>

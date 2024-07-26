@@ -6,8 +6,8 @@ const Principal = () => (
     <main>
         <div className={styles.mainContainer}>
             <div className={styles.div1}>
-                <h2>Com a gente é tudo mais simples. <strong>Não perca mais tempo
-                    esperando </strong>pelo pagamento dos seus precatórios.</h2>
+                <h2>Com a gente é tudo mais <br /> simples. <strong>Não perca mais tempo <br />
+                    esperando </strong>pelo pagamento dos <br /> seus precatórios.</h2>
                 <a href="#"><button>Fale conosco agora</button></a>
             </div>
 

@@ -18,4 +18,4 @@ const IndexPage = () => {
 };
 
 export default IndexPage;
-export const Head = () => <title>Quita Simples – Simplificando o pagamento dos seus precatórios.</title>;
+export const Head = () => <title>Quita Simples – Simplificando o pagamento dos seus precatórios</title>;

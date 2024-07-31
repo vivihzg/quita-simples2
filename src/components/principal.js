@@ -3,12 +3,12 @@ import imagemIlustracao from "../images/ilustracao-quita-simples.png";
 import * as styles from "../components/index.module.css";
 
 const Principal = () => (
-    <main>
+    <>
         <div className={styles.mainContainer}>
             <div className={styles.div1}>
                 <h2>Com a gente é tudo mais <br /> simples. <strong>Não perca mais tempo <br />
                     esperando </strong>pelo pagamento dos <br /> seus precatórios.</h2>
-                <a href="#"><button>Fale conosco agora</button></a>
+                <a href="#"><button>Receber meu precatório</button></a>
             </div>
 
             <div className={styles.div2}>
@@ -18,7 +18,7 @@ const Principal = () => (
                 />
             </div>
         </div>
-    </main>
+    </>
 )
 
 export default Principal

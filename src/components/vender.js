@@ -2,8 +2,8 @@ import * as React from "react"
 import * as styles from "../components/index.module.css";
 
 const Vender = () => (
-    <main>
-        <div className={styles.cardBackground}>
+    <>
+        <div className={styles.cardBackground} id="vender">
             <div className={styles.cardContent}>
                 <h2>Por que vender o seu precatório?</h2>
                 <p className={styles.venderParagrafo}>Cansado de esperar pela justiça? Venda o seu título e receba o seu dinheiro AGORA!</p>
@@ -20,6 +20,6 @@ const Vender = () => (
                 </div>
             </div>
         </div>
-    </main>
+    </>
 )
 export default Vender

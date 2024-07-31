@@ -7,13 +7,15 @@ import Footer from "../components/footer";
 
 const IndexPage = () => {
   return (
-    <>
-      <Header />
-      <Principal />
-      <Vender />
-      <Sobre />
-      <Footer />
-    </>
+    <html lang="pt-BR">
+      <main>
+        <Header />
+        <Principal />
+        <Vender />
+        <Sobre />
+        <Footer />
+      </main>
+    </html>
   );
 };
 

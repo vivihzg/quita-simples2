@@ -191,6 +191,26 @@ p {
   text-decoration: none;
   color: var(--branco-azulado);
 }
+.politicaContainer{
+  margin-top: 20px;
+  max-width: 750px;
+  margin: 40px auto;
+  padding: 20px;
+  color: var(--preto-azulado);
+}
+.politicaContainer h3{
+  color: var(--azul-medio);
+  font-size: 20px;
+}
+.politicaContainer h2{
+  color: var(--azul-medio);
+  font-size: 30px;
+}
+.politicaContainer p{
+  text-align: justify;
+  font-size: 17px;
+}
+
 
 @media only screen and (max-width: 1116px) {
   header {
@@ -254,7 +274,6 @@ p {
   .footerLogo p {
     font-size: 19px;
   }
-
 }
 
 @media only screen and (max-width: 968px) {
@@ -475,7 +494,7 @@ p {
 }
 
 @media screen and (max-width: 573px) {
-  header a{
+  .headerLink a{
     display: none;
   }
   .header img{
@@ -543,7 +562,15 @@ p {
   .footerPolitica a{
     font-size: 17px;
   }
-
+}
+@media screen and (max-width: 500px){
+.footerContainer{
+  flex-direction: column;
+  text-align: center;
+}
+.footerContainer a{
+  margin-top: 25px;
+}
 }
 @media screen and (max-width: 355px){
   .div2 img{
@@ -586,9 +613,5 @@ p {
   .sobreTexto button{
     font-size: 16px;
     padding: 19px 15px;
-  }
-  .footerContainer{
-    flex-direction: column;
-    text-align: center;
   }
 }

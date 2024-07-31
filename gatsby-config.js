@@ -3,8 +3,9 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `Quita Simples`,
-    siteUrl: `https://quitasimples.com.br/`
+    title: `Quita Simples – Simplificando o pagamento dos seus precatórios`,
+    siteUrl: `https://quitasimples.com.br/`,
+    description: `Compramos seu Precatório, sem mais esperar, seu pagamento aqui é à vista em 24hrs!.`
   },
   plugins: ["gatsby-plugin-image", "gatsby-plugin-sitemap", "gatsby-transformer-remark", "gatsby-plugin-sharp", "gatsby-transformer-sharp", {
     resolve: 'gatsby-source-filesystem',

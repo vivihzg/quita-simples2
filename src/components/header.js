@@ -6,14 +6,10 @@ import { Link } from 'gatsby';
 const Header = () => (
   <header className={styles.header}>
 
-    <Link to="/">
-      <img src={Logo} alt="Quita Simples logo azul" />
-    </Link>
+    <img to="/" src={Logo} alt="Quita Simples logo azul" />
 
-    <div className={styles.headerLink}>
-      <Link to="/#vender">Por que vender?</Link>
-      <Link to="/#quem-somos">Sobre nós</Link>
-    </div>
+    <Link to="/#vender">Por que vender?</Link>
+    <Link to="/#quem-somos">Sobre nós</Link>
   </header>
 )
 

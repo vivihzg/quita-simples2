@@ -52,7 +52,10 @@ header {
   font-weight: 600;
   font-size: 20px;
 }
-
+.headerLink{
+  display: flex;
+  gap: 10px;
+}
 .mainContainer {
   display: flex;
   align-items: center;
@@ -65,14 +68,17 @@ header {
   color: var(--azul-escuro);
   font-size: 34px;
   font-weight: 500;
+  margin: 15px;
 }
 
 .div1 button {
   transition: background .3s ease;
+  margin: 15px;
 }
 
 .div2 img {
   height: 350px;
+  margin: 10px;
 }
 
 .cardBackground {
@@ -93,12 +99,13 @@ header {
 .cardContent h2 {
   color: var(--branco-azulado);
   font-size: 30px;
-  margin: 0;
+  margin: 10px;
 }
 
 .venderParagrafo {
   color: var(--branco-azulado);
   font-size: 22px;
+  margin: 20px 10px;
 }
 
 .cardContainer {
@@ -139,22 +146,26 @@ p {
 .sobreTexto h2 {
   font-size: 30px;
   font-weight: 900;
+  margin: 15px;
 }
 
 .sobreTexto p {
   font-size: 22px;
+  margin: 15px;
 }
 
 .sobreContainer img {
   width: 500px;
   border-radius: 5px;
   box-shadow: 10px 10px 0px 0px #26ADBF;
+  margin: 15px;
 }
 
 .sobreTexto button {
   padding: 18px 25px;
   font-size: 19px;
   transition: background .3s ease;
+  margin: 15px;
 }
 
 .footerBackground {
@@ -494,14 +505,12 @@ p {
 }
 
 @media screen and (max-width: 573px) {
-  .headerLink a{
+  .header a{
     display: none;
   }
   .header img{
+    display: block;
     height: 43px;
-  }
-  header{
-    margin-left: 33px;
   }
   .mainContainer{
     flex-direction: column-reverse;

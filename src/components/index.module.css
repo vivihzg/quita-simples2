@@ -38,7 +38,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 190px;
+  gap: 120px;
   margin-top: 50px;
 }
 
@@ -201,6 +201,15 @@ p {
   font-size: 19px;
   text-decoration: none;
   color: var(--branco-azulado);
+}
+.footerMarca span{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 50px 0 0;
+  color: var(--branco-azulado);
+  text-align: center;
+  font-size: 14px;
 }
 .politicaContainer{
   margin-top: 20px;

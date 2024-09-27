@@ -8,6 +8,7 @@ const Header = () => (
 
     <img to="/" src={Logo} alt="Quita Simples logo azul" />
 
+    <Link to="/">Início</Link>
     <Link to="/#vender">Por que vender?</Link>
     <Link to="/#quem-somos">Sobre nós</Link>
   </header>

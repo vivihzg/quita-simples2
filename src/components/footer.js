@@ -17,6 +17,9 @@ const Footer = () => (
                 <Link to="/politica-de-privacidade">Política de Privacidade</Link>
                 </div>
             </div>
+            <div className={styles.footerMarca}>
+                <span>QUITA SIMPLES INVESTIMENTOS EM DIREITOS CREDITORIOS LTDA <br/>CNPJ: 57.424.278/0001-03 | Cascavel-PR</span>
+            </div>
         </div>
     </footer>
 )

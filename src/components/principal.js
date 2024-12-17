@@ -8,7 +8,7 @@ const Principal = () => (
             <div className={styles.div1}>
                 <h2>Com a gente é tudo mais <br /> simples. <strong>Não perca mais tempo <br />
                     esperando </strong>pelo pagamento dos <br /> seus precatórios.</h2>
-                <a href="#"><button>Receber meu precatório</button></a>
+                <a href="https://wa.me/553530420920/?text=Ol%C3%A1%20tenho%20interesse%20de%20vender%20meu%20precat%C3%B3rio"><button>Receber meu precatório</button></a>
             </div>
 
             <div className={styles.div2}>

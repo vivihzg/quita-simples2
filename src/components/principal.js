@@ -3,25 +3,32 @@ import { StaticImage } from "gatsby-plugin-image";
 import * as styles from "../components/index.module.css";
 
 const Principal = () => (
-    <>
-        <div className={styles.mainContainer}>
-            <div className={styles.div1}>
-                <h2>Com a gente é tudo mais <br /> simples. <strong>Não perca mais tempo <br />
-                    esperando </strong>pelo pagamento dos <br /> seus precatórios.</h2>
-                <a href="https://wa.me/553530420920/?text=Ol%C3%A1%20tenho%20interesse%20de%20vender%20meu%20precat%C3%B3rio"><button>Receber meu precatório</button></a>
-            </div>
+  <section className={styles.mainContainer}>
+    <div className={styles.heroText}>
+      <h1 className={styles.heroTitle}>
+        Com a gente é tudo mais simples.{" "}
+        <strong>Não perca mais tempo esperando</strong> pelo pagamento dos seus precatórios.
+      </h1>
+      <a
+        className={styles.ctaLink}
+        href="https://wa.me/5545984055504/?text=Ol%C3%A1%20tenho%20interesse%20de%20vender%20meu%20precat%C3%B3rio"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <button type="button">Receber meu precatório</button>
+      </a>
+    </div>
 
-            <div className={styles.div2}>
-                <StaticImage
-                    src="../images/ilustracao-quita-simples.png"
-                    alt="Mulher despreocupada, por que teve seu tempo salvo com a Quita Simples"
-                    placeholder="blurred"
-                    loading="lazy"
-                    height={350}
-                />
-            </div>
-        </div>
-    </>
+    <div className={styles.heroImage}>
+      <StaticImage
+        src="../images/ilustracao-quita-simples.png"
+        alt="Mulher despreocupada, por que teve seu tempo salvo com a Quita Simples"
+        placeholder="blurred"
+        loading="eager"
+        height={400}
+      />
+    </div>
+  </section>
 )
 
 export default Principal

@@ -48,6 +48,6 @@ export const Head = () => (
     <SEO
         title="Política de Privacidade – Quita Simples"
         description="Conheça a política de privacidade da Quita Simples. Saiba como coletamos, usamos e protegemos seus dados pessoais com segurança e transparência."
-        pathname="/politica-de-privacidade"
+        pathname="/politica-de-privacidade/"
     />
 )

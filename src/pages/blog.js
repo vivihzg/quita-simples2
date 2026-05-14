@@ -36,7 +36,7 @@ export const Head = () => (
   <SEO
     title="Blog – Quita Simples"
     description="Leia artigos e novidades sobre precatórios, direitos creditórios e finanças no blog da Quita Simples. Informações úteis para quem quer vender seu precatório."
-    pathname="/blog"
+    pathname="/blog/"
   />
 )
 
